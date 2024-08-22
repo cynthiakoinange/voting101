@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.scss';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+import React from 'react';
+import ReactDOM from 'react-dom';
+import InternetIdentityAuth from './components/InternetIdentityAuth'; // Ensure the path is correct
+import './index.scss';
+function App() {
+  return (
+    <div>
+      <h1>Welcome to My App</h1>
+      <InternetIdentityAuth />
+      {/* Other components */}
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
